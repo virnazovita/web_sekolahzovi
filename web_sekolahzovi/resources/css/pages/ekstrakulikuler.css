@@ -1,0 +1,162 @@
+/* ====================== HALAMAN EKSTRAKURIKULER ====================== */
+
+/* ---- Navbar ---- */
+.navbar {
+    background-color: #0a1f4d;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+.navbar-inner {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.logo-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    object-fit: contain;
+}
+.logo-text {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.nav-menu a {
+    color: #cbd5e1;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+}
+.nav-menu a:hover {
+    color: #ffffff;
+}
+.nav-menu a.active {
+    color: #ffffff;
+    font-weight: 600;
+}
+.nav-menu a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 2px;
+}
+.btn-login {
+    background-color: #33488f;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.5rem 1.1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+.btn-login:hover {
+    background-color: #3f5aad;
+}
+
+/* ---- Hero ---- */
+.hero {
+    background: linear-gradient(135deg, #0b3d78 0%, #1e40af 60%, #2563eb 100%);
+    text-align: center;
+    padding: 3.5rem 1.5rem;
+    color: #ffffff;
+}
+.hero h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    line-height: 1.3;
+}
+.hero p {
+    max-width: 40rem;
+    margin: 1rem auto 0;
+    color: #dbeafe;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* ---- Daftar Ekstrakurikuler ---- */
+.ekskul-list {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+@media (min-width: 640px) {
+    .ekskul-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .ekskul-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.ekskul-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.9rem;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.ekskul-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+.ekskul-img {
+    width: 100%;
+    height: 170px;
+    background-size: cover;
+    background-position: center;
+    background-color: #e2e8f0;
+}
+.ekskul-info {
+    padding: 1.1rem 1.25rem 1.4rem;
+}
+.ekskul-info h2 {
+    color: #0b3d78;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.ekskul-info p {
+    color: #64748b;
+    font-size: 0.85rem;
+    line-height: 1.55;
+}
+
+/* ---- Footer ---- */
+.footer {
+    background-color: #0b3d78;
+    text-align: center;
+    padding: 0.9rem 1.25rem;
+}
+.footer p {
+    color: #cbd5e1;
+    font-size: 0.7rem;
+    letter-spacing: 0.03em;
+}
